@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>喝水提醒助手</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>💧 喝水提醒助手</h1>
+            <p class="subtitle">每30分钟提醒你喝水</p>
+        </div>
+        
+        <div class="status-section">
+            <div class="status-item">
+                <span class="label">提醒状态:</span>
+                <span id="status-text" class="status-text">加载中...</span>
+            </div>
+            
+            <div class="toggle-container">
+                <label class="switch">
+                    <input type="checkbox" id="reminder-toggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+        
+        <div class="stats-section">
+            <div class="stat-item">
+                <span class="stat-label">今日提醒次数:</span>
+                <span id="total-reminders" class="stat-value">0</span>
+            </div>
+            
+            <div class="stat-item">
+                <span class="stat-label">上次提醒:</span>
+                <span id="last-reminder" class="stat-value">--</span>
+            </div>
+        </div>
+        
+        <div class="info-section">
+            <h3>💡 健康小贴士</h3>
+            <p>成年人每天建议喝8杯水（约2升），保持身体水分充足有助于：</p>
+            <ul>
+                <li>提高新陈代谢</li>
+                <li>改善皮肤状态</li>
+                <li>增强免疫力</li>
+                <li>提升注意力</li>
+            </ul>
+        </div>
+        
+        <div class="footer">
+            <button id="test-notification" class="test-btn">测试通知</button>
+        </div>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html> 

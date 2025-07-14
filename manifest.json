@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "喝水提醒助手",
+  "version": "1.0",
+  "description": "每半小时提醒你喝水，保持健康",
+  "permissions": [
+    "alarms",
+    "notifications",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "喝水提醒助手"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+} 
